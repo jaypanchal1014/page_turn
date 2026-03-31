@@ -140,12 +140,12 @@ class _PageTurnViewState extends State<PageTurnView> {
             },
           ),
         ),
-        // PageIndicator(
-        //   current: currentPage,
-        //   total: widget.itemCount,
-        //   onNext: () => widget.controller?.nextPage(),
-        //   onPrev: () => widget.controller?.previousPage(),
-        // ),
+        PageIndicator(
+          current: currentPage,
+          total: widget.itemCount,
+          onNext: () => widget.controller?.nextPage(),
+          onPrev: () => widget.controller?.previousPage(),
+        ),
       ],
     );
   }
