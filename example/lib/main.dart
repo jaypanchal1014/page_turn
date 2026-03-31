@@ -31,7 +31,6 @@ class ExamplePage extends StatelessWidget {
         axis: Axis.horizontal,
         // infinite: true,
         // autoPlay: true,
-        showIndicator: true,
 
         itemBuilder: (context, index) {
           return Container(

@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_page_turn/src/controller/controller.dart';
 import 'package:flutter_page_turn/src/effects/slide.dart';
 import 'package:flutter_page_turn/src/model/page_turn_effect.dart';
-import 'package:flutter_page_turn/src/widgets/indicator.dart';
 
 class PageTurnView extends StatefulWidget {
   final int itemCount;
@@ -140,12 +139,12 @@ class _PageTurnViewState extends State<PageTurnView> {
             },
           ),
         ),
-        PageIndicator(
-          current: currentPage,
-          total: widget.itemCount,
-          onNext: () => widget.controller?.nextPage(),
-          onPrev: () => widget.controller?.previousPage(),
-        ),
+        // PageIndicator(
+        //   current: currentPage,
+        //   total: widget.itemCount,
+        //   onNext: () => widget.controller?.nextPage(),
+        //   onPrev: () => widget.controller?.previousPage(),
+        // ),
       ],
     );
   }
